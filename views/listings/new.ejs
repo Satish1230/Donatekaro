@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+</head>
+
+<body>
+    <h3>Create a new Listing</h3>
+    <form method="post" action="/listings">
+        <div class="mb-3">
+            <lable for="title" class="form-label">Title</lable>
+            <input name="listing[title]" placeholder="Enter title" type="text" class="form-control" />
+        </div>
+
+
+        <div class="mb-3">
+            <lable for="description" class="form-label">Description</lable>
+            <textarea name="listing[description]" class="form-control"></textarea>
+        </div>
+
+
+        <div class="mb-3">
+            <lable for="image" class="form-label">Enter image URL/Link</lable>
+            <input name="listing[image]" placeholder="Enter image url" type="text" class="form-control">
+        </div>
+
+
+
+
+
+        <button class="btn btn-dark">Add</button>
+    </form>
+</body>
+
+</html>
